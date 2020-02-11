@@ -1,3 +1,5 @@
+package com.qa.ims;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +38,7 @@ public class Inventory {
         boolean inStock = false;
         if(productName != null) {
             for(Peripheral p : list) {
-                if(p.getProductName() == productName) {
+                if(p.getProductName().equals(productName)) {
                     inStock = true;
                 }
             }

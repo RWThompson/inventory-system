@@ -1,3 +1,9 @@
+package com.qa.ims;
+
+import com.qa.ims.Keyboard;
+import com.qa.ims.Mouse;
+import com.qa.ims.Peripheral;
+import com.qa.ims.Sale;
 import org.junit.Before;
 import org.junit.Test;
 

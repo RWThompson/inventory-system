@@ -1,3 +1,5 @@
+package com.qa.ims;
+
 import java.math.BigDecimal;
 
 public class Keyboard extends Peripheral {
@@ -6,8 +8,8 @@ public class Keyboard extends Peripheral {
     private String size;
 
     public Keyboard(int id, String name, BigDecimal price, boolean rgb, String layout, String size) {
-        if((size == "100%" || size == "TKL" || size == "75%" || size == "60%" || size == "40%" || size == "30%")
-                && (layout == "ANSI" || layout == "ISO")) {
+        if((size.equals("100%") || size.equals("TKL") || size.equals("75%") || size.equals("60%")
+                || size.equals("40%") || size.equals("30%")) && (layout.equals("ANSI") || layout.equals("ISO"))) {
             setItemId(id);
             setProductName(name);
             setPrice(price);
@@ -18,7 +20,7 @@ public class Keyboard extends Peripheral {
     }
 
     public void setLayout(String l) {
-        if(l == "ANSI" || l == "ISO") {
+        if(l.equals("ANSI") || l.equals("ISO")) {
             layout = l;
         }
     }
@@ -28,7 +30,8 @@ public class Keyboard extends Peripheral {
     }
 
     public void setSize(String s) {
-        if(s == "100%" || s == "TKL" || s == "75%" || s == "60%" || s == "40%" || s == "30%") {
+        if(s.equals("100%") || s.equals("TKL") || s.equals("75%") || s.equals("60%")
+                || s.equals("40%") || s.equals("30%")) {
             size = s;
         }
     }

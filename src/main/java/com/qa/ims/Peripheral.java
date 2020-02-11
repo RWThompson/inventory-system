@@ -1,3 +1,5 @@
+package com.qa.ims;
+
 import java.math.BigDecimal;
 
 public class Peripheral {

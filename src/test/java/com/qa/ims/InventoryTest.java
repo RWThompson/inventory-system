@@ -1,3 +1,8 @@
+package com.qa.ims;
+
+import com.qa.ims.Inventory;
+import com.qa.ims.Keyboard;
+import com.qa.ims.Mouse;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,8 +20,8 @@ public class InventoryTest {
         inventory = new Inventory();
 
         keyboard = new Keyboard(1,"Drevo", new BigDecimal(35.00), true, "ISO", "TKL");
-        Keyboard keyboard1 = new Keyboard(2,"Razer",new BigDecimal(125.00), false, "ANSI", "100%");
-        Keyboard keyboard2 = new Keyboard(3,"SteelSeries",new BigDecimal(95.00), true, "ISO", "60%");
+        Keyboard keyboard1 = new Keyboard(2,"Razer", new BigDecimal(125.00), false, "ANSI", "100%");
+        Keyboard keyboard2 = new Keyboard(3,"SteelSeries", new BigDecimal(95.00), true, "ISO", "60%");
 
         Mouse mouse = new Mouse(4, "Pictek", new BigDecimal(25.00), true, 5);
         Mouse mouse1 = new Mouse(5, "Rat", new BigDecimal(75.00), false, 4);
